@@ -19,6 +19,7 @@ from ezargparser import ArgParser
 
 Parser = ArgParser(arguments=args, argSchema=argSchema)
 ```
+<br>
 
 ### Argument Schema
 You need to provide a schema for your arguments.<br>
@@ -37,7 +38,7 @@ __Each schema 'key' has to be unique, but they can be named however you want.__
 ```
 `type` specifies the type you want the input to be. Defaults to string if not provided.<br>
 Optional: `count` spcifies the number of arguments related to this key.<br>
-* `'count': 'all'` will take the all the remaining arguments and store them to the key.
+* `'count': 'all'` will take the all the remaining arguments and store them to the key.<br>
 
 ### Fetching arguments
 Fetching arguments with a key:
@@ -52,6 +53,7 @@ Fetching all arguments:
 Parser.fetchAllArgs()
 ## returns a list of all arguments
 ```
+<br>
 
 ### Option Schema
 Using EZ ArgParser with options
@@ -91,6 +93,7 @@ Like with arguments,<br>
 `type` specifies the type you want the parameter to be. Defaults to string if not provided.<br>
 Optional: `count` spcifies the number of parameters related to this key.<br>
 * Note that `'count': 'all'` can __NOT__ be used when dealing with option parameters (for now).
+<br>
 
 ### Fetching options & option parameters
 Check if option is active:
