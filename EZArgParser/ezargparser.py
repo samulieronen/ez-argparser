@@ -60,12 +60,14 @@ def validate_types(args, schema):
 	except KeyError:
 		type_to_convert = str
 	newList = []
-	for item in args:
-		if item is not None:
+	index = 0
+	while index < len(args):
+		if args[index] is not None:
 			if type is not str:
-				newList.append(converter(item, type_to_convert))
+				newList.append(converter(args[index], type_to_convert))
 			else:
-				newList.append(item)
+				newList.append(args[index])
+		index += 1
 	return newList
 
 def get_args(argDict, currentSchema, args, amount, name):
