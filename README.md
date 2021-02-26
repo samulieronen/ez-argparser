@@ -37,7 +37,7 @@ __Each schema 'key' has to be unique, but they can be named however you want.__
  {'type': str, 'count': 2}
 ```
 `type` specifies the type you want the input to be. Defaults to string if not provided.<br>
-Optional: `count` spcifies the number of arguments related to this key.<br>
+Optional: `count` spcifies the number of arguments related to this key. Defaults to 1 if not provided<br>
 * `'count': 'all'` will take the all the remaining arguments and store them to the key.
 <br>
 
@@ -81,7 +81,7 @@ This option schema specifies the following options:
 <br>
 
 Option bundling, f.ex. -vle __NOT__ supported at the moment.<br>
-__Name schema keys WITHOUT leading hyphens! '-'__
+__Name schema keys WITHOUT leading hyphens! '-'__ <br>
 Each schema key __MUST__ be a valid option. Name them wisely.<br>
 If a option has a long version, you can specify it to the `verbose` field.<br>
 If your option takes parameters:
