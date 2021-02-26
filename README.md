@@ -79,6 +79,7 @@ This option schema specifies the following options:
 * -l
 * -e
 <br>
+
 Option bundling, f.ex. -vle __NOT__ supported at the moment.<br>
 __Name schema keys WITHOUT leading hyphens! '-'__
 Each schema key __MUST__ be a valid option. Name them wisely.<br>
