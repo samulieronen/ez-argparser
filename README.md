@@ -38,7 +38,8 @@ __Each schema 'key' has to be unique, but they can be named however you want.__
 ```
 `type` specifies the type you want the input to be. Defaults to string if not provided.<br>
 Optional: `count` spcifies the number of arguments related to this key.<br>
-* `'count': 'all'` will take the all the remaining arguments and store them to the key.<br>
+* `'count': 'all'` will take the all the remaining arguments and store them to the key.
+<br>
 
 ### Fetching arguments
 Fetching arguments with a key:
@@ -63,12 +64,6 @@ from ezargparser import ArgParser
 Parser = ArgParser(arguments=args, argumentSchema=argSchema, options=True, optionSchema=optSchema)
 ```
 As with arguments, if your program takes options, you need to specify a option schema.<br>
-This option schema specifies the following options:
-* -v
-* -l
-* -e
-Option bundling, f.ex. -vle __NOT__ supported at the moment.
-
 ```python
 OptSchema = {
 	'v': {'verbose': 'verbose'},
@@ -79,6 +74,12 @@ OptSchema = {
 	}}
 }
 ```
+This option schema specifies the following options:
+* -v
+* -l
+* -e
+<br>
+Option bundling, f.ex. -vle __NOT__ supported at the moment.<br>
 __Name schema keys WITHOUT leading hyphens! '-'__
 Each schema key __MUST__ be a valid option. Name them wisely.<br>
 If a option has a long version, you can specify it to the `verbose` field.<br>
