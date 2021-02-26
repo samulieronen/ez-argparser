@@ -62,7 +62,7 @@ class ArgParser:
 			return None
 
 	def fetchAllArgs(self):
-		return self.args
+		return self.untouched
 
 	def printArgs(self):
 		for arg in self.untouched:
